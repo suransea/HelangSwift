@@ -30,11 +30,15 @@ let a: 🍎 = 🍎[10]
 
 其他基本一致.
 
-需要注意的是, 使用5g测速前, 需要先调用`关注永雏塔菲喵 ^-^ 关注永雏塔菲谢谢喵`, 否则将收到fatalError:
+需要注意的是, 使用5g测速前, 需要先调用`关注永雏塔菲喵 ^-^ 关注永雏塔菲谢谢喵`, 否则将产生fatalError:
+
+```swift
+test5g(.music) // fatalError
+```
 
 ```swift
 关注永雏塔菲喵 ^-^ 关注永雏塔菲谢谢喵  // 这是合法的Swift语句
-test5g(.music)
+test5g(.music) // ok
 ```
 
 ## Example
