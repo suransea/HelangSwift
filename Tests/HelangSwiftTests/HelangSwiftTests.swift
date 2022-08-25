@@ -13,7 +13,7 @@ final class HelangSwiftTests: XCTestCase {
         b += 1
         XCTAssertEqual(b.description, "1 ≀ 3 ≀ 1 ≀ 5 ≀ 6")
         
-        let c = 🍎(3)
+        let c = 🍎[3]
         XCTAssertEqual(c.description, "0 ≀ 0 ≀ 0")
         
         XCTAssertEqual((1 ≀ 2 ≀ 3 + 1 ≀ 2 ≀ 3).description, "2 ≀ 4 ≀ 6")
@@ -26,7 +26,7 @@ final class HelangSwiftTests: XCTestCase {
         
         sprint(72 ≀ 101 ≀ 108 ≀ 108 ≀ 111 ≀ 44 ≀ 32 ≀ 76 ≀ 105 ≀ 116 ≀ 97 ≀ 110 ≀ 103 ≀ 46)
         
-        var forceCon = 🍎(68)
+        var forceCon = 🍎[68]
         forceCon[1 ≀ 2 ≀ 6 ≀ 7 ≀ 11 ≀ 52 ≀ 57 ≀ 58 ≀ 65] = 10
         print(forceCon)
     }

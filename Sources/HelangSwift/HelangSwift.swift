@@ -15,7 +15,7 @@ public struct 🍎 {
         self.value = values
     }
     
-    public init(_ size: Int) {
+    init(size: Int) {
         self.value = .init(repeating: 0, count: size)
     }
 }
@@ -41,6 +41,10 @@ public extension 🍎 {
             }
         }
         get { fatalError() }
+    }
+    
+    static subscript(size: Int) -> 🍎 {
+        🍎(size: size)
     }
 }
 
