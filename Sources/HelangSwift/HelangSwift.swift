@@ -102,15 +102,15 @@ public func sprint(_ value: 🍎) {
     print(String(value.value.map(Unicode.Scalar.init).compactMap { $0 }.map(Character.init)))
 }
 
-public let 关注永雏塔菲喵 = 0x00ff
-public let 关注永雏塔菲谢谢喵 = 0xff00
+public let 关注永雏塔菲喵 = arc4random()
+public let 关注永雏塔菲谢谢喵 = arc4random()
 
 var followed = false
 
 infix operator ^-^
 
-public func ^-^(l: Int, r: Int) {
-    if l | r == 0xffff {
+public func ^-^(l: UInt32, r: UInt32) {
+    if l == 关注永雏塔菲喵 && r == 关注永雏塔菲谢谢喵 {
         followed = true
     }
 }
